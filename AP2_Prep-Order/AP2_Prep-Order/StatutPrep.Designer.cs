@@ -57,11 +57,13 @@
             // Statut
             // 
             this.Statut.Text = "Statut";
-            this.Statut.Width = 300;
+            this.Statut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Statut.Width = 250;
             // 
             // Signaler
             // 
             this.Signaler.Text = "Signaler";
+            this.Signaler.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Signaler.Width = 250;
             // 
             // label1
