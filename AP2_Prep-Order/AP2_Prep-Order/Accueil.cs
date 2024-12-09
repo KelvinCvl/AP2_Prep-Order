@@ -16,5 +16,12 @@ namespace AP2_Prep_Order
         {
             InitializeComponent();
         }
+
+        private void statutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatutPrep statutPrep = new StatutPrep();
+            statutPrep.MdiParent = this;
+            statutPrep.Show();
+        }
     }
 }
