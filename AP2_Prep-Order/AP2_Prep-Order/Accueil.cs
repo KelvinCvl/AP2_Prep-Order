@@ -89,27 +89,22 @@ namespace AP2_Prep_Order
                     command.Parameters.AddWithValue("@mdp", mdp);
                     command.Parameters.AddWithValue("@table", role);
 
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        // Vérifiez s'il y a des lignes à lire
-                        if (reader.Read())
-                        {
-                            // Vérifiez si la colonne "id" n'est pas NULL avant de la parser
-                            int id = reader["id"] != DBNull.Value ? int.Parse(reader["id"].ToString()) : -1;
+                    // DECLARE @id EN OUTPUT
+                    SqlParameter idParam = new SqlParameter("@id", SqlDbType.Int);
+                    idParam.Direction = ParameterDirection.Output;
+                    command.Parameters.Add(idParam);
 
-                            if (id != 0)
-                            {
-                                return true;
-                            }
-                            else
-                            {
-                                return false;
-                            }
-                        }
-                        else
-                        {
-                            return false;
-                        }
+                    command.ExecuteNonQuery();
+
+                    int id = (int)idParam.Value;
+
+                    if (id != 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
                     }
                 }
             }
@@ -180,6 +175,17 @@ namespace AP2_Prep_Order
             {
                 lbl_err.Visible = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel_connect.Visible = false;
+            panel_connect.Enabled=false;
+
+            panel_btn_connect.Visible = true;
+            panel_btn_connect.Enabled = true;
+
+            lbl_err.Visible=false;
         }
     }
 }

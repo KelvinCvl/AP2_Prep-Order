@@ -53,6 +53,7 @@ namespace AP2_Prep_Order
             this.tb_identifiant = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_err = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_bdd_connected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_bdd_disconnect)).BeginInit();
@@ -228,6 +229,7 @@ namespace AP2_Prep_Order
             // panel_connect
             // 
             this.panel_connect.BackColor = System.Drawing.Color.White;
+            this.panel_connect.Controls.Add(this.button2);
             this.panel_connect.Controls.Add(this.lbl_connect);
             this.panel_connect.Controls.Add(this.btn_connect);
             this.panel_connect.Controls.Add(this.label5);
@@ -252,7 +254,7 @@ namespace AP2_Prep_Order
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(94, 215);
+            this.btn_connect.Location = new System.Drawing.Point(58, 219);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(107, 30);
             this.btn_connect.TabIndex = 5;
@@ -302,6 +304,16 @@ namespace AP2_Prep_Order
             this.lbl_err.Size = new System.Drawing.Size(265, 20);
             this.lbl_err.TabIndex = 0;
             this.lbl_err.Text = "identifiant ou mot de passe incorrect";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(171, 219);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 30);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Retour";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Accueil
             // 
@@ -365,5 +377,6 @@ namespace AP2_Prep_Order
         private System.Windows.Forms.TextBox tb_identifiant;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_err;
+        private System.Windows.Forms.Button button2;
     }
 }
