@@ -32,6 +32,7 @@
             this.préparateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paletteManquanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,13 @@
             this.responsableToolStripMenuItem.Name = "responsableToolStripMenuItem";
             this.responsableToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.responsableToolStripMenuItem.Text = "Responsable";
+            this.responsableToolStripMenuItem.Click += new System.EventHandler(this.responsableToolStripMenuItem_Click);
+            // 
+            // paletteManquanteToolStripMenuItem
+            // 
+            this.paletteManquanteToolStripMenuItem.Name = "paletteManquanteToolStripMenuItem";
+            this.paletteManquanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paletteManquanteToolStripMenuItem.Text = "palette manquante";
             // 
             // Accueil
             // 
@@ -91,5 +99,6 @@
         private System.Windows.Forms.ToolStripMenuItem préparateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caristeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem responsableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem paletteManquanteToolStripMenuItem;
     }
 }
