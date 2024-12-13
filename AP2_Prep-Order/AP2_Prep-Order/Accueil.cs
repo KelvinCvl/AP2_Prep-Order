@@ -37,5 +37,12 @@ namespace AP2_Prep_Order
             statutPrep.MdiParent = this;
             statutPrep.Show();
         }
+
+        private void responsableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConnexionResponsable connectResp = new ConnexionResponsable();
+            connectResp.MdiParent = this;
+            connectResp.Show();
+        }
     }
 }
