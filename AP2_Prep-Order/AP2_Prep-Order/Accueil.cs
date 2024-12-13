@@ -20,37 +20,74 @@ namespace AP2_Prep_Order
 
         private void Accueil_Load(object sender, EventArgs e)
         {
+            //panel 
+
+            panel_btn_start.Visible = true;
+            panel_btn_start.Enabled = true;
+
+            panel_btn_connect.Visible = false;
+            panel_btn_connect.Enabled = false;
+            panel_error.Visible = false;
+            panel_error.Enabled = false;
+
+            //pitcure box
+
+            pb_bdd_wait.Enabled = true;
+            pb_bdd_wait.Visible = true;
+            pb_bdd_wait.Location = new Point(14, 12);
+
+            pb_bdd_disconnect.Enabled = false;
+            pb_bdd_disconnect.Visible = false;
+            pb_bdd_disconnect.Location = new Point(14, 12);
+            pb_bdd_connected.Enabled = false;
+            pb_bdd_connected.Visible = false;
+            pb_bdd_connected.Location = new Point(14, 12);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel_btn_start.Visible = false;
+            panel_btn_start.Enabled = false;
             try
             {
                 Bdd.db_connect.Open();
-                MessageBox.Show("Connexion réussie à la base de données.");
+                pb_bdd_wait.Visible = false;
+                pb_bdd_wait.Enabled = false;
+
+                pb_bdd_connected.Visible = true;
+                pb_bdd_connected.Enabled = true;
+
+                panel_btn_connect.Visible = true;
+                panel_btn_connect.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur de connexion : " + ex.Message);
+                textBox1.Text = "Erreur de connexion : " + ex.Message;
+
+                pb_bdd_wait.Visible = false;
+                pb_bdd_wait.Enabled = false;
+
+                pb_bdd_disconnect.Visible = true;
+                pb_bdd_disconnect.Enabled = true;
+
+                panel_error.Visible = true;
+                panel_error.Enabled = true;
             }
         }
 
-        private void préparateurToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_connect_cariste_Click(object sender, EventArgs e)
         {
-            StatutPrep statutPrep = new StatutPrep();
-            statutPrep.MdiParent = this;
-            statutPrep.Show();
+
         }
 
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        private void btn_connect_prep_Click(object sender, EventArgs e)
         {
-            PalettesManquantes palettesmanquantes = new PalettesManquantes();
-            palettesmanquantes.MdiParent = this;
-            palettesmanquantes.Show();
+
         }
 
-        private void responsableToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_connect_resp_Click(object sender, EventArgs e)
         {
-            ConnexionResponsable connectResp = new ConnexionResponsable();
-            connectResp.MdiParent = this;
-            connectResp.Show();
+
         }
     }
 }

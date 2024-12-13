@@ -10,8 +10,8 @@ namespace AP2_Prep_Order
 {
     internal class Bdd
     {
-        //public static SqlConnection db_connect = new SqlConnection("Server=localhost;Database=ap2prep'order;Trusted_Connection=True;");
+        public static SqlConnection db_connect = new SqlConnection("Server=localhost;Database=ap2prep'order;Trusted_Connection=True;");
 
-        public static SqlConnection db_connect = new SqlConnection("Data Source=P-SANS\\SQLEXPRESS;Initial Catalog=ap2prep'order;User ID=P-SANS\\Kelvin;Integrated Security=True;TrustServerCertificate=True;");
+        //public static SqlConnection db_connect = new SqlConnection("Data Source=P-SANS\\SQLEXPRESS;Initial Catalog=ap2prep'order;User ID=P-SANS\\Kelvin;Integrated Security=True;TrustServerCertificate=True;");
     }
 }
