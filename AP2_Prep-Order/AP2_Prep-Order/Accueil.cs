@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AP2_Prep_Order
 {
@@ -17,7 +18,20 @@ namespace AP2_Prep_Order
             InitializeComponent();
         }
 
-        private void statutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Accueil_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Bdd.db_connect.Open();
+                MessageBox.Show("Connexion réussie à la base de données.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur de connexion : " + ex.Message);
+            }
+        }
+
+        private void préparateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StatutPrep statutPrep = new StatutPrep();
             statutPrep.MdiParent = this;

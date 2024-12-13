@@ -33,7 +33,10 @@
             this.statutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.palettesManquantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> origin/develop
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,11 +55,10 @@
             // 
             // préparateurToolStripMenuItem
             // 
-            this.préparateurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statutToolStripMenuItem});
             this.préparateurToolStripMenuItem.Name = "préparateurToolStripMenuItem";
             this.préparateurToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
             this.préparateurToolStripMenuItem.Text = "Préparateur";
+            this.préparateurToolStripMenuItem.Click += new System.EventHandler(this.préparateurToolStripMenuItem_Click);
             // 
             // statutToolStripMenuItem
             // 
@@ -79,6 +81,7 @@
             this.responsableToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.responsableToolStripMenuItem.Text = "Responsable";
             // 
+<<<<<<< HEAD
             // palettesManquantesToolStripMenuItem
             // 
             this.palettesManquantesToolStripMenuItem.Name = "palettesManquantesToolStripMenuItem";
@@ -86,6 +89,8 @@
             this.palettesManquantesToolStripMenuItem.Text = "Palettes Manquantes";
             this.palettesManquantesToolStripMenuItem.Click += new System.EventHandler(this.palettesManquantesToolStripMenuItem_Click);
             // 
+=======
+>>>>>>> origin/develop
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -94,7 +99,11 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> origin/develop
             this.Name = "Accueil";
             this.Text = "Page d\'accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
@@ -109,7 +118,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem préparateurToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caristeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem responsableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem palettesManquantesToolStripMenuItem;
