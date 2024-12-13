@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +36,14 @@ namespace AP2_Prep_Order
             StatutPrep statutPrep = new StatutPrep();
             statutPrep.MdiParent = this;
             statutPrep.Show();
+        }
+
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            PalettesManquantes palettesmanquantes = new PalettesManquantes();
+            palettesmanquantes.MdiParent = this;
+            palettesmanquantes.Show();
         }
 
         private void responsableToolStripMenuItem_Click(object sender, EventArgs e)
