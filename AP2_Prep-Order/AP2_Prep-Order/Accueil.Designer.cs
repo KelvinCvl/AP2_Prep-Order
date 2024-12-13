@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.préparateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,13 @@
             this.préparateurToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.préparateurToolStripMenuItem.Text = "Préparateur";
             // 
+            // statutToolStripMenuItem
+            // 
+            this.statutToolStripMenuItem.Name = "statutToolStripMenuItem";
+            this.statutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statutToolStripMenuItem.Text = "Statut";
+            this.statutToolStripMenuItem.Click += new System.EventHandler(this.statutToolStripMenuItem_Click);
+            // 
             // caristeToolStripMenuItem
             // 
             this.caristeToolStripMenuItem.Name = "caristeToolStripMenuItem";
@@ -68,13 +75,6 @@
             this.responsableToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.responsableToolStripMenuItem.Text = "Responsable";
             // 
-            // statutToolStripMenuItem
-            // 
-            this.statutToolStripMenuItem.Name = "statutToolStripMenuItem";
-            this.statutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.statutToolStripMenuItem.Text = "Statut";
-            this.statutToolStripMenuItem.Click += new System.EventHandler(this.statutToolStripMenuItem_Click);
-            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,9 +83,10 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Accueil";
             this.Text = "Page d\'accueil";
+            this.Load += new System.EventHandler(this.Accueil_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
