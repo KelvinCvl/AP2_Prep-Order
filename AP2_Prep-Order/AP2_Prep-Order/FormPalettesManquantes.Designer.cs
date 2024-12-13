@@ -33,9 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lv_vide = new System.Windows.Forms.ListView();
             this.Emplacement = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Zone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Etage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Alleé = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Etage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Article = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Quantité = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
@@ -58,6 +57,7 @@
             this.cb_zone.Name = "cb_zone";
             this.cb_zone.Size = new System.Drawing.Size(121, 24);
             this.cb_zone.TabIndex = 3;
+            this.cb_zone.SelectedIndexChanged += new System.EventHandler(this.cb_zone_SelectedIndexChanged_1);
             // 
             // label2
             // 
@@ -73,7 +73,6 @@
             // 
             this.lv_vide.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Emplacement,
-            this.Zone,
             this.Alleé,
             this.Etage,
             this.Article,
@@ -91,22 +90,17 @@
             this.Emplacement.Text = "Emplacement";
             this.Emplacement.Width = 140;
             // 
-            // Zone
+            // Alleé
             // 
-            this.Zone.Text = "Zone";
-            this.Zone.Width = 100;
+            this.Alleé.DisplayIndex = 2;
+            this.Alleé.Text = "Allée";
+            this.Alleé.Width = 80;
             // 
             // Etage
             // 
-            this.Etage.DisplayIndex = 2;
+            this.Etage.DisplayIndex = 1;
             this.Etage.Text = "Etage";
-            this.Etage.Width = 100;
-            // 
-            // Alleé
-            // 
-            this.Alleé.DisplayIndex = 3;
-            this.Alleé.Text = "Allée";
-            this.Alleé.Width = 100;
+            this.Etage.Width = 80;
             // 
             // Article
             // 
@@ -116,7 +110,7 @@
             // Quantité
             // 
             this.Quantité.Text = "Quantité";
-            this.Quantité.Width = 100;
+            this.Quantité.Width = 80;
             // 
             // FormPalettesManquantes
             // 
@@ -142,7 +136,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView lv_vide;
         private System.Windows.Forms.ColumnHeader Emplacement;
-        private System.Windows.Forms.ColumnHeader Zone;
         private System.Windows.Forms.ColumnHeader Etage;
         private System.Windows.Forms.ColumnHeader Alleé;
         private System.Windows.Forms.ColumnHeader Article;

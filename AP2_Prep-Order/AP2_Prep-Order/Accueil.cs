@@ -156,7 +156,7 @@ namespace AP2_Prep_Order
 
         private void btn_connect_Click(object sender, EventArgs e)
         {
-            if (ConnexionCompte(tb_identifiant.Text, tb_mdp.Text, LeRole))
+            if (ConnexionCompte(tb_identifiant.Text, tb_mdp.Text, LeRole)==false)
             {
                 lbl_err.Visible = false;
                 if (LeRole == "Cariste")
