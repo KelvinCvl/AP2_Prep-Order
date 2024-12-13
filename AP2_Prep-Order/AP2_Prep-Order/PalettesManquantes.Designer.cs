@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 18);
+            this.label1.Location = new System.Drawing.Point(108, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 42);
             this.label1.TabIndex = 2;
@@ -52,7 +52,7 @@
             // cb_zone
             // 
             this.cb_zone.FormattingEnabled = true;
-            this.cb_zone.Location = new System.Drawing.Point(378, 27);
+            this.cb_zone.Location = new System.Drawing.Point(434, 27);
             this.cb_zone.Name = "cb_zone";
             this.cb_zone.Size = new System.Drawing.Size(223, 24);
             this.cb_zone.TabIndex = 3;
@@ -69,7 +69,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(37, 110);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(564, 463);
+            this.listView1.Size = new System.Drawing.Size(739, 463);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -103,7 +103,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 71);
+            this.label2.Location = new System.Drawing.Point(154, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(488, 25);
             this.label2.TabIndex = 5;
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 668);
+            this.ClientSize = new System.Drawing.Size(826, 668);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.cb_zone);

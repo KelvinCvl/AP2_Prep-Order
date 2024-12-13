@@ -44,7 +44,7 @@ namespace AP2_Prep_Order
         {
             try
             {
-                using (SqlCommand command = new SqlCommand("GetPalettesVide", Bdd.bd_connect))
+                using (SqlCommand command = new SqlCommand("GetPalettesVide", Bdd.db_connect))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ZoneNum", zone);
