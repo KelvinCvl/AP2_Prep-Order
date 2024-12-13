@@ -1,4 +1,4 @@
-﻿namespace AP2_Prep_Order
+namespace AP2_Prep_Order
 {
     partial class Accueil
     {
@@ -33,10 +33,7 @@
             this.statutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-<<<<<<< HEAD
             this.palettesManquantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-=======
->>>>>>> origin/develop
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,16 +78,10 @@
             this.responsableToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.responsableToolStripMenuItem.Text = "Responsable";
             // 
-<<<<<<< HEAD
-            // palettesManquantesToolStripMenuItem
-            // 
             this.palettesManquantesToolStripMenuItem.Name = "palettesManquantesToolStripMenuItem";
             this.palettesManquantesToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.palettesManquantesToolStripMenuItem.Text = "Palettes Manquantes";
             this.palettesManquantesToolStripMenuItem.Click += new System.EventHandler(this.palettesManquantesToolStripMenuItem_Click);
-            // 
-=======
->>>>>>> origin/develop
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -99,11 +90,8 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> origin/develop
             this.Name = "Accueil";
             this.Text = "Page d\'accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
