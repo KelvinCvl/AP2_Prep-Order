@@ -29,6 +29,9 @@ namespace AP2_Prep_Order
             panel_btn_connect.Enabled = false;
             panel_error.Visible = false;
             panel_error.Enabled = false;
+            panel_connect.Visible = false;
+            panel_connect.Enabled = false;
+            lbl_err.Visible = false;
 
             //pitcure box
 
@@ -75,19 +78,108 @@ namespace AP2_Prep_Order
             }
         }
 
+        private bool ConnexionCompte(string login, string mdp, string role)
+        {
+            try
+            {
+                using (SqlCommand command = new SqlCommand("Connection", Bdd.db_connect))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@login", login);
+                    command.Parameters.AddWithValue("@mdp", mdp);
+                    command.Parameters.AddWithValue("@table", role);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        // Vérifiez s'il y a des lignes à lire
+                        if (reader.Read())
+                        {
+                            // Vérifiez si la colonne "id" n'est pas NULL avant de la parser
+                            int id = reader["id"] != DBNull.Value ? int.Parse(reader["id"].ToString()) : -1;
+
+                            if (id != 0)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        string LeRole = "";
+
         private void btn_connect_cariste_Click(object sender, EventArgs e)
         {
+            LeRole = "Cariste";
+            lbl_connect.Text = "Connexion Cariste";
+            panel_btn_connect.Enabled = false;
+            panel_btn_connect.Visible = false;
 
+            panel_connect.Visible = true;
+            panel_connect.Enabled = true;
         }
 
         private void btn_connect_prep_Click(object sender, EventArgs e)
         {
+            LeRole = "Preparateur";
+            lbl_connect.Text = "Connexion Preparateur";
+            panel_btn_connect.Enabled = false;
+            panel_btn_connect.Visible = false;
 
+            panel_connect.Visible = true;
+            panel_connect.Enabled = true;
         }
 
         private void btn_connect_resp_Click(object sender, EventArgs e)
         {
+            LeRole = "Responsable";
+            lbl_connect.Text = "Connexion Responsable";
+            panel_btn_connect.Enabled = false;
+            panel_btn_connect.Visible = false;
 
+            panel_connect.Visible = true;
+            panel_connect.Enabled = true;
+        }
+
+        private void btn_connect_Click(object sender, EventArgs e)
+        {
+            if (ConnexionCompte(tb_identifiant.Text, tb_mdp.Text, LeRole))
+            {
+                lbl_err.Visible = false;
+                if (LeRole == "Cariste")
+                {
+                    FormPalettesManquantes laPagePalettes = new FormPalettesManquantes();
+                    laPagePalettes.Show();
+                    this.Hide();
+                }
+                else if (LeRole == "Preparateur")
+                {
+                    //connexion preparateur
+                }
+                else
+                {
+                    ConnexionResponsable laPageConnexionResp = new ConnexionResponsable();
+                    laPageConnexionResp.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                lbl_err.Visible = true;
+            }
         }
     }
 }

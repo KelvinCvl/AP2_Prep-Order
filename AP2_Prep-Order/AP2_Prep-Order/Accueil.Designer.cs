@@ -34,17 +34,25 @@ namespace AP2_Prep_Order
             this.pb_bdd_disconnect = new System.Windows.Forms.PictureBox();
             this.pb_bdd_wait = new System.Windows.Forms.PictureBox();
             this.panel_btn_connect = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_connect_resp = new System.Windows.Forms.Button();
+            this.btn_connect_prep = new System.Windows.Forms.Button();
             this.btn_connect_cariste = new System.Windows.Forms.Button();
             this.panel_btn_start = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_connect_prep = new System.Windows.Forms.Button();
-            this.btn_connect_resp = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel_error = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel_connect = new System.Windows.Forms.Panel();
+            this.lbl_connect = new System.Windows.Forms.Label();
+            this.btn_connect = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_mdp = new System.Windows.Forms.TextBox();
+            this.tb_identifiant = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_err = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_bdd_connected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_bdd_disconnect)).BeginInit();
@@ -52,6 +60,7 @@ namespace AP2_Prep_Order
             this.panel_btn_connect.SuspendLayout();
             this.panel_btn_start.SuspendLayout();
             this.panel_error.SuspendLayout();
+            this.panel_connect.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -106,6 +115,36 @@ namespace AP2_Prep_Order
             this.panel_btn_connect.Size = new System.Drawing.Size(444, 105);
             this.panel_btn_connect.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(121, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Connectez vous à votre profil";
+            // 
+            // btn_connect_resp
+            // 
+            this.btn_connect_resp.Location = new System.Drawing.Point(167, 45);
+            this.btn_connect_resp.Name = "btn_connect_resp";
+            this.btn_connect_resp.Size = new System.Drawing.Size(110, 45);
+            this.btn_connect_resp.TabIndex = 2;
+            this.btn_connect_resp.Text = "Panel Responsable";
+            this.btn_connect_resp.UseVisualStyleBackColor = true;
+            this.btn_connect_resp.Click += new System.EventHandler(this.btn_connect_resp_Click);
+            // 
+            // btn_connect_prep
+            // 
+            this.btn_connect_prep.Location = new System.Drawing.Point(302, 45);
+            this.btn_connect_prep.Name = "btn_connect_prep";
+            this.btn_connect_prep.Size = new System.Drawing.Size(110, 45);
+            this.btn_connect_prep.TabIndex = 1;
+            this.btn_connect_prep.Text = "Panel Preparateur";
+            this.btn_connect_prep.UseVisualStyleBackColor = true;
+            this.btn_connect_prep.Click += new System.EventHandler(this.btn_connect_prep_Click);
+            // 
             // btn_connect_cariste
             // 
             this.btn_connect_cariste.Location = new System.Drawing.Point(25, 45);
@@ -156,36 +195,6 @@ namespace AP2_Prep_Order
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenue sur l\'application de gestion des";
             // 
-            // btn_connect_prep
-            // 
-            this.btn_connect_prep.Location = new System.Drawing.Point(302, 45);
-            this.btn_connect_prep.Name = "btn_connect_prep";
-            this.btn_connect_prep.Size = new System.Drawing.Size(110, 45);
-            this.btn_connect_prep.TabIndex = 1;
-            this.btn_connect_prep.Text = "Panel Preparateur";
-            this.btn_connect_prep.UseVisualStyleBackColor = true;
-            this.btn_connect_prep.Click += new System.EventHandler(this.btn_connect_prep_Click);
-            // 
-            // btn_connect_resp
-            // 
-            this.btn_connect_resp.Location = new System.Drawing.Point(167, 45);
-            this.btn_connect_resp.Name = "btn_connect_resp";
-            this.btn_connect_resp.Size = new System.Drawing.Size(110, 45);
-            this.btn_connect_resp.TabIndex = 2;
-            this.btn_connect_resp.Text = "Panel Responsable";
-            this.btn_connect_resp.UseVisualStyleBackColor = true;
-            this.btn_connect_resp.Click += new System.EventHandler(this.btn_connect_resp_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(121, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Connectez vous à votre profil";
-            // 
             // panel_error
             // 
             this.panel_error.BackColor = System.Drawing.SystemColors.Control;
@@ -195,6 +204,15 @@ namespace AP2_Prep_Order
             this.panel_error.Name = "panel_error";
             this.panel_error.Size = new System.Drawing.Size(444, 152);
             this.panel_error.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(40, 32);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(372, 117);
+            this.textBox1.TabIndex = 4;
             // 
             // label4
             // 
@@ -207,20 +225,90 @@ namespace AP2_Prep_Order
             this.label4.TabIndex = 3;
             this.label4.Text = "Impossible de se connecter à la base de données";
             // 
-            // textBox1
+            // panel_connect
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 32);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(372, 117);
-            this.textBox1.TabIndex = 4;
+            this.panel_connect.BackColor = System.Drawing.Color.White;
+            this.panel_connect.Controls.Add(this.lbl_connect);
+            this.panel_connect.Controls.Add(this.btn_connect);
+            this.panel_connect.Controls.Add(this.label5);
+            this.panel_connect.Controls.Add(this.tb_mdp);
+            this.panel_connect.Controls.Add(this.tb_identifiant);
+            this.panel_connect.Controls.Add(this.label6);
+            this.panel_connect.Controls.Add(this.lbl_err);
+            this.panel_connect.Location = new System.Drawing.Point(403, 191);
+            this.panel_connect.Name = "panel_connect";
+            this.panel_connect.Size = new System.Drawing.Size(288, 264);
+            this.panel_connect.TabIndex = 5;
+            // 
+            // lbl_connect
+            // 
+            this.lbl_connect.AutoSize = true;
+            this.lbl_connect.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_connect.Location = new System.Drawing.Point(12, 9);
+            this.lbl_connect.Name = "lbl_connect";
+            this.lbl_connect.Size = new System.Drawing.Size(265, 29);
+            this.lbl_connect.TabIndex = 6;
+            this.lbl_connect.Text = "Connexion Responsable";
+            // 
+            // btn_connect
+            // 
+            this.btn_connect.Location = new System.Drawing.Point(94, 215);
+            this.btn_connect.Name = "btn_connect";
+            this.btn_connect.Size = new System.Drawing.Size(107, 30);
+            this.btn_connect.TabIndex = 5;
+            this.btn_connect.Text = "Connexion";
+            this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(38, 163);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Mot de passe";
+            // 
+            // tb_mdp
+            // 
+            this.tb_mdp.Location = new System.Drawing.Point(41, 179);
+            this.tb_mdp.Name = "tb_mdp";
+            this.tb_mdp.Size = new System.Drawing.Size(208, 20);
+            this.tb_mdp.TabIndex = 3;
+            // 
+            // tb_identifiant
+            // 
+            this.tb_identifiant.Location = new System.Drawing.Point(41, 106);
+            this.tb_identifiant.Name = "tb_identifiant";
+            this.tb_identifiant.Size = new System.Drawing.Size(208, 20);
+            this.tb_identifiant.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(38, 90);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Identifiant";
+            // 
+            // lbl_err
+            // 
+            this.lbl_err.AutoSize = true;
+            this.lbl_err.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_err.ForeColor = System.Drawing.Color.Red;
+            this.lbl_err.Location = new System.Drawing.Point(13, 58);
+            this.lbl_err.Name = "lbl_err";
+            this.lbl_err.Size = new System.Drawing.Size(265, 20);
+            this.lbl_err.TabIndex = 0;
+            this.lbl_err.Text = "identifiant ou mot de passe incorrect";
             // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 484);
+            this.ClientSize = new System.Drawing.Size(1484, 692);
+            this.Controls.Add(this.panel_connect);
             this.Controls.Add(this.panel_error);
             this.Controls.Add(this.panel_btn_start);
             this.Controls.Add(this.panel_btn_connect);
@@ -242,6 +330,8 @@ namespace AP2_Prep_Order
             this.panel_btn_start.PerformLayout();
             this.panel_error.ResumeLayout(false);
             this.panel_error.PerformLayout();
+            this.panel_connect.ResumeLayout(false);
+            this.panel_connect.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -267,5 +357,13 @@ namespace AP2_Prep_Order
         private System.Windows.Forms.Panel panel_error;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel_connect;
+        private System.Windows.Forms.Label lbl_connect;
+        private System.Windows.Forms.Button btn_connect;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tb_mdp;
+        private System.Windows.Forms.TextBox tb_identifiant;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_err;
     }
 }
