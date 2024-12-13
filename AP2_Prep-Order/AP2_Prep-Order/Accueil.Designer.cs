@@ -32,6 +32,7 @@ namespace AP2_Prep_Order
             this.préparateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paletteManquanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,13 +70,7 @@ namespace AP2_Prep_Order
             this.responsableToolStripMenuItem.Name = "responsableToolStripMenuItem";
             this.responsableToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.responsableToolStripMenuItem.Text = "Responsable";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.toolStripMenuItem2.Text = "PalettesManquantes";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.responsableToolStripMenuItem.Click += new System.EventHandler(this.responsableToolStripMenuItem_Click);
             // 
             // Accueil
             // 
@@ -102,7 +97,5 @@ namespace AP2_Prep_Order
         private System.Windows.Forms.ToolStripMenuItem préparateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caristeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem responsableToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem palettesManquantesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
