@@ -26,7 +26,7 @@ namespace AP2_Prep_Order
             cb_zone.Items.Add("Liquide");
         }
 
-        private void cb_zone_SelectedIndexChanged(object sender, EventArgs e)
+        private void cb_zone_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             int zone;
             switch (cb_zone.SelectedItem.ToString())
@@ -62,9 +62,9 @@ namespace AP2_Prep_Order
 
                         while (reader.Read())
                         {
-                            ListViewItem item = new ListViewItem(reader["allee"].ToString());
+                            ListViewItem item = new ListViewItem(reader["emplacement"].ToString());
                             item.SubItems.Add(reader["etage"].ToString());
-                            item.SubItems.Add(reader["emplacement"].ToString());
+                            item.SubItems.Add(reader["allee"].ToString());
                             item.SubItems.Add(reader["idArticlePalette"].ToString());
                             item.SubItems.Add(reader["nombrePlein"].ToString());
                             lv_vide.Items.Add(item);
@@ -82,6 +82,7 @@ namespace AP2_Prep_Order
         {
 
         }
+
     }
 }
 
