@@ -30,7 +30,6 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.préparateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caristeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.responsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -50,18 +49,10 @@
             // 
             // préparateurToolStripMenuItem
             // 
-            this.préparateurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statutToolStripMenuItem});
             this.préparateurToolStripMenuItem.Name = "préparateurToolStripMenuItem";
             this.préparateurToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.préparateurToolStripMenuItem.Text = "Préparateur";
-            // 
-            // statutToolStripMenuItem
-            // 
-            this.statutToolStripMenuItem.Name = "statutToolStripMenuItem";
-            this.statutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.statutToolStripMenuItem.Text = "Statut";
-            this.statutToolStripMenuItem.Click += new System.EventHandler(this.statutToolStripMenuItem_Click);
+            this.préparateurToolStripMenuItem.Click += new System.EventHandler(this.préparateurToolStripMenuItem_Click);
             // 
             // caristeToolStripMenuItem
             // 
@@ -98,7 +89,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem préparateurToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caristeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem responsableToolStripMenuItem;
     }
