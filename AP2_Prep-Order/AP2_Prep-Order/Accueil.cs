@@ -23,5 +23,17 @@ namespace AP2_Prep_Order
             statutPrep.MdiParent = this;
             statutPrep.Show();
         }
+
+        private void Accueil_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void palettesManquantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PalettesManquantes palettesmanquantes = new PalettesManquantes();
+            palettesmanquantes.MdiParent = this;
+            palettesmanquantes.Show();
+        }
     }
 }
