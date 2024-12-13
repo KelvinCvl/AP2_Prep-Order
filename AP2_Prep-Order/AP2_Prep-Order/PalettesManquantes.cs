@@ -44,7 +44,7 @@ namespace AP2_Prep_Order
         {
             try
             {
-                using (SqlCommand command = new SqlCommand("GetPalettesVide", Bdd.db_connect))
+                using (SqlCommand command = new SqlCommand("PalettesVide", Bdd.db_connect))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ZoneNum", zone);
@@ -58,6 +58,7 @@ namespace AP2_Prep_Order
                             ListViewItem item = new ListViewItem(reader["allee"].ToString());
                             item.SubItems.Add(reader["etage"].ToString());
                             item.SubItems.Add(reader["emplacement"].ToString());
+                            item.SubItems.Add(reader["idArticlePalette"].ToString());
                             item.SubItems.Add(reader["nombrePlein"].ToString());
                             listView1.Items.Add(item);
                         }
