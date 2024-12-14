@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.importerUnFichierCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualiserLesCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualiserLesProduitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignerDesPréparateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suiviDesCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -42,7 +41,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importerUnFichierCSVToolStripMenuItem,
             this.visualiserLesCommandesToolStripMenuItem,
-            this.visualiserLesProduitsToolStripMenuItem,
             this.assignerDesPréparateursToolStripMenuItem,
             this.suiviDesCommandesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -56,30 +54,28 @@
             this.importerUnFichierCSVToolStripMenuItem.Name = "importerUnFichierCSVToolStripMenuItem";
             this.importerUnFichierCSVToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.importerUnFichierCSVToolStripMenuItem.Text = "Importer un fichier CSV";
+            this.importerUnFichierCSVToolStripMenuItem.Click += new System.EventHandler(this.importerUnFichierCSVToolStripMenuItem_Click);
             // 
             // visualiserLesCommandesToolStripMenuItem
             // 
             this.visualiserLesCommandesToolStripMenuItem.Name = "visualiserLesCommandesToolStripMenuItem";
             this.visualiserLesCommandesToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
             this.visualiserLesCommandesToolStripMenuItem.Text = "Visualiser les commandes";
-            // 
-            // visualiserLesProduitsToolStripMenuItem
-            // 
-            this.visualiserLesProduitsToolStripMenuItem.Name = "visualiserLesProduitsToolStripMenuItem";
-            this.visualiserLesProduitsToolStripMenuItem.Size = new System.Drawing.Size(132, 20);
-            this.visualiserLesProduitsToolStripMenuItem.Text = "Visualiser les produits";
+            this.visualiserLesCommandesToolStripMenuItem.Click += new System.EventHandler(this.visualiserLesCommandesToolStripMenuItem_Click);
             // 
             // assignerDesPréparateursToolStripMenuItem
             // 
             this.assignerDesPréparateursToolStripMenuItem.Name = "assignerDesPréparateursToolStripMenuItem";
             this.assignerDesPréparateursToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
             this.assignerDesPréparateursToolStripMenuItem.Text = "Assigner des préparateurs";
+            this.assignerDesPréparateursToolStripMenuItem.Click += new System.EventHandler(this.assignerDesPréparateursToolStripMenuItem_Click);
             // 
             // suiviDesCommandesToolStripMenuItem
             // 
             this.suiviDesCommandesToolStripMenuItem.Name = "suiviDesCommandesToolStripMenuItem";
             this.suiviDesCommandesToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
             this.suiviDesCommandesToolStripMenuItem.Text = "Suivi des commandes";
+            this.suiviDesCommandesToolStripMenuItem.Click += new System.EventHandler(this.suiviDesCommandesToolStripMenuItem_Click);
             // 
             // ConnexionResponsable
             // 
@@ -104,7 +100,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem importerUnFichierCSVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualiserLesCommandesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualiserLesProduitsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assignerDesPréparateursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suiviDesCommandesToolStripMenuItem;
     }
