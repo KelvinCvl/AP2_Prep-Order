@@ -64,6 +64,18 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Bdd.cs" />
+    <Compile Include="ConfirmationStockage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationStockage.Designer.cs">
+      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionCariste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionCariste.Designer.cs">
+      <DependentUpon>ConnexionCariste.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnexionResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
     <Compile Include="FormPalettesManquantes.Designer.cs">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionHauteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionHauteur.Designer.cs">
+      <DependentUpon>GestionHauteur.cs</DependentUpon>
     </Compile>
     <Compile Include="ImporterResponsable.cs">
       <SubType>Form</SubType>
@@ -93,11 +111,17 @@
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionCariste.resx">
+      <DependentUpon>ConnexionCariste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnexionResponsable.resx">
       <DependentUpon>ConnexionResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPalettesManquantes.resx">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionHauteur.resx">
+      <DependentUpon>GestionHauteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImporterResponsable.resx">
       <DependentUpon>ImporterResponsable.cs</DependentUpon>
