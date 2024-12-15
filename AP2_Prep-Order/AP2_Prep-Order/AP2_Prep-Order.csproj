@@ -64,6 +64,12 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Bdd.cs" />
+    <Compile Include="ComptesResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComptesResponsable.Designer.cs">
+      <DependentUpon>ComptesResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnexionResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,28 +82,40 @@
     <Compile Include="FormPalettesManquantes.Designer.cs">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Responsable.cs">
+    <Compile Include="ImporterResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Responsable.Designer.cs">
-      <DependentUpon>Responsable.cs</DependentUpon>
+    <Compile Include="ImporterResponsable.Designer.cs">
+      <DependentUpon>ImporterResponsable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatutPrep.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StatutPrep.Designer.cs">
       <DependentUpon>StatutPrep.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisualiserResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualiserResponsable.Designer.cs">
+      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComptesResponsable.resx">
+      <DependentUpon>ComptesResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConnexionResponsable.resx">
       <DependentUpon>ConnexionResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPalettesManquantes.resx">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImporterResponsable.resx">
+      <DependentUpon>ImporterResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,11 +126,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Responsable.resx">
-      <DependentUpon>Responsable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StatutPrep.resx">
       <DependentUpon>StatutPrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualiserResponsable.resx">
+      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

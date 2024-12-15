@@ -16,5 +16,58 @@ namespace AP2_Prep_Order
         {
             InitializeComponent();
         }
+
+        public static string csvFilePath = @"";
+
+        private void importerUnFichierCSVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OuvrirImportation();
+        }
+
+        public static void OuvrirImportation()
+        {
+            ImporterResponsable importPage = new ImporterResponsable();
+            importPage.MdiParent = ConnexionResponsable.ActiveForm;
+            importPage.Show();
+        }
+
+        private void visualiserLesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OuvrirVisualisation();
+        }
+
+        public static void OuvrirVisualisation()
+        {
+            VisualiserResponsable visualiser = new VisualiserResponsable();
+            visualiser.MdiParent = ConnexionResponsable.ActiveForm;
+            visualiser.Show();
+        }
+
+        private void assignerDesPréparateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suiviDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConnexionResponsable_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ConnexionResponsable_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void utilisateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ComptesResponsable laPageComptes = new ComptesResponsable();
+            laPageComptes.MdiParent = this;
+            laPageComptes.Show();
+        }
     }
 }
