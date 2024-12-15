@@ -64,6 +64,12 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Bdd.cs" />
+    <Compile Include="ComptesResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComptesResponsable.Designer.cs">
+      <DependentUpon>ComptesResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnexionResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +96,17 @@
     <Compile Include="StatutPrep.Designer.cs">
       <DependentUpon>StatutPrep.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisualiserResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualiserResponsable.Designer.cs">
+      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComptesResponsable.resx">
+      <DependentUpon>ComptesResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConnexionResponsable.resx">
       <DependentUpon>ConnexionResponsable.cs</DependentUpon>
@@ -113,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="StatutPrep.resx">
       <DependentUpon>StatutPrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualiserResponsable.resx">
+      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

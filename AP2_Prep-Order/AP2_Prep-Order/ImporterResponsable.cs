@@ -34,6 +34,8 @@ namespace AP2_Prep_Order
                     ConnexionResponsable.csvFilePath = openFileDialog.FileName;
                     lbl_error.Visible = false;
                     lbl_working.Visible = true;
+                    ConnexionResponsable.OuvrirVisualisation();
+                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -51,5 +53,7 @@ namespace AP2_Prep_Order
             lbl_error.Visible = false;
             lbl_working.Visible = false;
         }
+
+        
     }
 }
