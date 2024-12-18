@@ -81,14 +81,14 @@ namespace AP2_Prep_Order
                             {
                                 ListViewItem item = new ListViewItem(reader["libelleArticle"].ToString());
                                 item.SubItems.Add(reader["qteCommande"].ToString());
-                                lv_sous_commande.Items.Add(item);
+                                lv_commander.Items.Add(item);
                             }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erreur lors de la récupération des comptes utlisateurs (Préparateur) : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Erreur lors du chargement de la liste commander : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -126,7 +126,7 @@ namespace AP2_Prep_Order
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erreur lors de la récupération des comptes utlisateurs (Préparateur) : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Erreur lors du chargement de la liste des sous commandes : {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
