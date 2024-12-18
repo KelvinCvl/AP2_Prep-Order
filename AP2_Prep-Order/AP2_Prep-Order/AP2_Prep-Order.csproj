@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -64,11 +64,17 @@
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="Bdd.cs" />
-    <Compile Include="ComptesResponsable.cs">
+    <Compile Include="ConfirmationStockage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ComptesResponsable.Designer.cs">
-      <DependentUpon>ComptesResponsable.cs</DependentUpon>
+    <Compile Include="ConfirmationStockage.Designer.cs">
+      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionCariste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionCariste.Designer.cs">
+      <DependentUpon>ConnexionCariste.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnexionResponsable.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="FormPalettesManquantes.Designer.cs">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionHauteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionHauteur.Designer.cs">
+      <DependentUpon>GestionHauteur.cs</DependentUpon>
     </Compile>
     <Compile Include="ImporterResponsable.cs">
       <SubType>Form</SubType>
@@ -111,14 +123,14 @@
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ComptesResponsable.resx">
-      <DependentUpon>ComptesResponsable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConnexionResponsable.resx">
       <DependentUpon>ConnexionResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPalettesManquantes.resx">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionHauteur.resx">
+      <DependentUpon>GestionHauteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImporterResponsable.resx">
       <DependentUpon>ImporterResponsable.cs</DependentUpon>

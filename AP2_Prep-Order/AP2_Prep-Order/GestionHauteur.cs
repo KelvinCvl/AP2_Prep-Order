@@ -8,27 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AP2_Prep_Order
 {
-    public partial class FormPalettesManquantes : Form
+    public partial class GestionHauteur : Form
     {
-        public FormPalettesManquantes()
+        public GestionHauteur()
         {
             InitializeComponent();
         }
 
-        private void FormPalettesManquantes_Load(object sender, EventArgs e)
+        private void GestionHauteur_Load(object sender, EventArgs e)
         {
             cb_zone.Items.Add("Sec");
             cb_zone.Items.Add("DPH");
             cb_zone.Items.Add("Liquide");
         }
 
-        private void cb_zone_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void cb_zone_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int id = Bdd.id;
             int zone;
             switch (cb_zone.SelectedItem.ToString())
             {
@@ -45,22 +43,21 @@ namespace AP2_Prep_Order
                     MessageBox.Show("Zone inconnue", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
             }
-            GetPalettesVide(zone,id);
+            StockageEtage(zone);
         }
 
-        private void GetPalettesVide(int zone, int id)
+        private void StockageEtage(int zone)
         {
             try
             {
-                using (SqlCommand command = new SqlCommand("PalettesVide", Bdd.db_connect))
+                using (SqlCommand command = new SqlCommand("StockageEtage", Bdd.db_connect))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ZoneNum", zone);
-                    command.Parameters.AddWithValue("@id", id);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        lv_vide.Items.Clear();
+                        lv_stock.Items.Clear();
 
                         while (reader.Read())
                         {
@@ -68,8 +65,8 @@ namespace AP2_Prep_Order
                             item.SubItems.Add(reader["allee"].ToString());
                             item.SubItems.Add(reader["etage"].ToString());
                             item.SubItems.Add(reader["libelleArticle"].ToString());
-                            item.SubItems.Add(reader["nombrePlein"].ToString());
-                            lv_vide.Items.Add(item);
+                            item.SubItems.Add(reader["nombre"].ToString());
+                            lv_stock.Items.Add(item);
                         }
                     }
                 }
@@ -80,18 +77,9 @@ namespace AP2_Prep_Order
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
     }
 }
-
-
-       
-

@@ -68,9 +68,10 @@ namespace AP2_Prep_Order
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(258, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(344, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(563, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(751, 213);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -78,9 +79,10 @@ namespace AP2_Prep_Order
             // pb_bdd_connected
             // 
             this.pb_bdd_connected.Image = ((System.Drawing.Image)(resources.GetObject("pb_bdd_connected.Image")));
-            this.pb_bdd_connected.Location = new System.Drawing.Point(14, 12);
+            this.pb_bdd_connected.Location = new System.Drawing.Point(19, 15);
+            this.pb_bdd_connected.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pb_bdd_connected.Name = "pb_bdd_connected";
-            this.pb_bdd_connected.Size = new System.Drawing.Size(75, 75);
+            this.pb_bdd_connected.Size = new System.Drawing.Size(100, 92);
             this.pb_bdd_connected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_bdd_connected.TabIndex = 1;
             this.pb_bdd_connected.TabStop = false;
@@ -88,9 +90,10 @@ namespace AP2_Prep_Order
             // pb_bdd_disconnect
             // 
             this.pb_bdd_disconnect.Image = ((System.Drawing.Image)(resources.GetObject("pb_bdd_disconnect.Image")));
-            this.pb_bdd_disconnect.Location = new System.Drawing.Point(14, 174);
+            this.pb_bdd_disconnect.Location = new System.Drawing.Point(19, 214);
+            this.pb_bdd_disconnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pb_bdd_disconnect.Name = "pb_bdd_disconnect";
-            this.pb_bdd_disconnect.Size = new System.Drawing.Size(75, 75);
+            this.pb_bdd_disconnect.Size = new System.Drawing.Size(100, 92);
             this.pb_bdd_disconnect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_bdd_disconnect.TabIndex = 2;
             this.pb_bdd_disconnect.TabStop = false;
@@ -98,9 +101,10 @@ namespace AP2_Prep_Order
             // pb_bdd_wait
             // 
             this.pb_bdd_wait.Image = ((System.Drawing.Image)(resources.GetObject("pb_bdd_wait.Image")));
-            this.pb_bdd_wait.Location = new System.Drawing.Point(14, 93);
+            this.pb_bdd_wait.Location = new System.Drawing.Point(19, 114);
+            this.pb_bdd_wait.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pb_bdd_wait.Name = "pb_bdd_wait";
-            this.pb_bdd_wait.Size = new System.Drawing.Size(75, 75);
+            this.pb_bdd_wait.Size = new System.Drawing.Size(100, 92);
             this.pb_bdd_wait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_bdd_wait.TabIndex = 3;
             this.pb_bdd_wait.TabStop = false;
@@ -111,26 +115,29 @@ namespace AP2_Prep_Order
             this.panel_btn_connect.Controls.Add(this.btn_connect_resp);
             this.panel_btn_connect.Controls.Add(this.btn_connect_prep);
             this.panel_btn_connect.Controls.Add(this.btn_connect_cariste);
-            this.panel_btn_connect.Location = new System.Drawing.Point(323, 245);
+            this.panel_btn_connect.Location = new System.Drawing.Point(431, 302);
+            this.panel_btn_connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_btn_connect.Name = "panel_btn_connect";
-            this.panel_btn_connect.Size = new System.Drawing.Size(444, 105);
+            this.panel_btn_connect.Size = new System.Drawing.Size(592, 129);
             this.panel_btn_connect.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(121, 9);
+            this.label3.Location = new System.Drawing.Point(161, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 20);
+            this.label3.Size = new System.Drawing.Size(264, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Connectez vous à votre profil";
             // 
             // btn_connect_resp
             // 
-            this.btn_connect_resp.Location = new System.Drawing.Point(167, 45);
+            this.btn_connect_resp.Location = new System.Drawing.Point(223, 55);
+            this.btn_connect_resp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_connect_resp.Name = "btn_connect_resp";
-            this.btn_connect_resp.Size = new System.Drawing.Size(110, 45);
+            this.btn_connect_resp.Size = new System.Drawing.Size(147, 55);
             this.btn_connect_resp.TabIndex = 2;
             this.btn_connect_resp.Text = "Panel Responsable";
             this.btn_connect_resp.UseVisualStyleBackColor = true;
@@ -138,9 +145,10 @@ namespace AP2_Prep_Order
             // 
             // btn_connect_prep
             // 
-            this.btn_connect_prep.Location = new System.Drawing.Point(302, 45);
+            this.btn_connect_prep.Location = new System.Drawing.Point(403, 55);
+            this.btn_connect_prep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_connect_prep.Name = "btn_connect_prep";
-            this.btn_connect_prep.Size = new System.Drawing.Size(110, 45);
+            this.btn_connect_prep.Size = new System.Drawing.Size(147, 55);
             this.btn_connect_prep.TabIndex = 1;
             this.btn_connect_prep.Text = "Panel Preparateur";
             this.btn_connect_prep.UseVisualStyleBackColor = true;
@@ -148,9 +156,10 @@ namespace AP2_Prep_Order
             // 
             // btn_connect_cariste
             // 
-            this.btn_connect_cariste.Location = new System.Drawing.Point(25, 45);
+            this.btn_connect_cariste.Location = new System.Drawing.Point(33, 55);
+            this.btn_connect_cariste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_connect_cariste.Name = "btn_connect_cariste";
-            this.btn_connect_cariste.Size = new System.Drawing.Size(110, 45);
+            this.btn_connect_cariste.Size = new System.Drawing.Size(147, 55);
             this.btn_connect_cariste.TabIndex = 0;
             this.btn_connect_cariste.Text = "Panel Cariste";
             this.btn_connect_cariste.UseVisualStyleBackColor = true;
@@ -161,26 +170,29 @@ namespace AP2_Prep_Order
             this.panel_btn_start.Controls.Add(this.label2);
             this.panel_btn_start.Controls.Add(this.button1);
             this.panel_btn_start.Controls.Add(this.label1);
-            this.panel_btn_start.Location = new System.Drawing.Point(367, 205);
+            this.panel_btn_start.Location = new System.Drawing.Point(489, 252);
+            this.panel_btn_start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_btn_start.Name = "panel_btn_start";
-            this.panel_btn_start.Size = new System.Drawing.Size(368, 164);
+            this.panel_btn_start.Size = new System.Drawing.Size(491, 202);
             this.panel_btn_start.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 36);
+            this.label2.Location = new System.Drawing.Point(81, 44);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 20);
+            this.label2.Size = new System.Drawing.Size(285, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "bases logistiques d\'Intermarché";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 98);
+            this.button1.Location = new System.Drawing.Point(161, 121);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 42);
+            this.button1.Size = new System.Drawing.Size(155, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Ouvrir l\'application";
             this.button1.UseVisualStyleBackColor = true;
@@ -190,9 +202,10 @@ namespace AP2_Prep_Order
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 16);
+            this.label1.Location = new System.Drawing.Point(43, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 20);
+            this.label1.Size = new System.Drawing.Size(375, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenue sur l\'application de gestion des";
             // 
@@ -201,18 +214,20 @@ namespace AP2_Prep_Order
             this.panel_error.BackColor = System.Drawing.SystemColors.Control;
             this.panel_error.Controls.Add(this.textBox1);
             this.panel_error.Controls.Add(this.label4);
-            this.panel_error.Location = new System.Drawing.Point(323, 217);
+            this.panel_error.Location = new System.Drawing.Point(431, 267);
+            this.panel_error.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_error.Name = "panel_error";
-            this.panel_error.Size = new System.Drawing.Size(444, 152);
+            this.panel_error.Size = new System.Drawing.Size(592, 187);
             this.panel_error.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 32);
+            this.textBox1.Location = new System.Drawing.Point(53, 39);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(372, 117);
+            this.textBox1.Size = new System.Drawing.Size(495, 143);
             this.textBox1.TabIndex = 4;
             // 
             // label4
@@ -220,9 +235,10 @@ namespace AP2_Prep_Order
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(49, 9);
+            this.label4.Location = new System.Drawing.Point(65, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(359, 20);
+            this.label4.Size = new System.Drawing.Size(441, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Impossible de se connecter à la base de données";
             // 
@@ -237,16 +253,18 @@ namespace AP2_Prep_Order
             this.panel_connect.Controls.Add(this.tb_identifiant);
             this.panel_connect.Controls.Add(this.label6);
             this.panel_connect.Controls.Add(this.lbl_err);
-            this.panel_connect.Location = new System.Drawing.Point(403, 191);
+            this.panel_connect.Location = new System.Drawing.Point(537, 235);
+            this.panel_connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_connect.Name = "panel_connect";
-            this.panel_connect.Size = new System.Drawing.Size(288, 264);
+            this.panel_connect.Size = new System.Drawing.Size(384, 325);
             this.panel_connect.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(171, 219);
+            this.button2.Location = new System.Drawing.Point(228, 270);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 30);
+            this.button2.Size = new System.Drawing.Size(88, 37);
             this.button2.TabIndex = 7;
             this.button2.Text = "Retour";
             this.button2.UseVisualStyleBackColor = true;
@@ -256,17 +274,19 @@ namespace AP2_Prep_Order
             // 
             this.lbl_connect.AutoSize = true;
             this.lbl_connect.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_connect.Location = new System.Drawing.Point(12, 9);
+            this.lbl_connect.Location = new System.Drawing.Point(16, 11);
+            this.lbl_connect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_connect.Name = "lbl_connect";
-            this.lbl_connect.Size = new System.Drawing.Size(265, 29);
+            this.lbl_connect.Size = new System.Drawing.Size(325, 37);
             this.lbl_connect.TabIndex = 6;
             this.lbl_connect.Text = "Connexion Responsable";
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(58, 219);
+            this.btn_connect.Location = new System.Drawing.Point(77, 270);
+            this.btn_connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_connect.Name = "btn_connect";
-            this.btn_connect.Size = new System.Drawing.Size(107, 30);
+            this.btn_connect.Size = new System.Drawing.Size(143, 37);
             this.btn_connect.TabIndex = 5;
             this.btn_connect.Text = "Connexion";
             this.btn_connect.UseVisualStyleBackColor = true;
@@ -275,33 +295,36 @@ namespace AP2_Prep_Order
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 163);
+            this.label5.Location = new System.Drawing.Point(51, 201);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.Size = new System.Drawing.Size(89, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Mot de passe";
             // 
             // tb_mdp
             // 
-            this.tb_mdp.Location = new System.Drawing.Point(41, 179);
+            this.tb_mdp.Location = new System.Drawing.Point(55, 220);
+            this.tb_mdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mdp.Name = "tb_mdp";
-            this.tb_mdp.PasswordChar = '*';
             this.tb_mdp.Size = new System.Drawing.Size(208, 20);
             this.tb_mdp.TabIndex = 3;
             // 
             // tb_identifiant
             // 
-            this.tb_identifiant.Location = new System.Drawing.Point(41, 106);
+            this.tb_identifiant.Location = new System.Drawing.Point(55, 130);
+            this.tb_identifiant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_identifiant.Name = "tb_identifiant";
-            this.tb_identifiant.Size = new System.Drawing.Size(208, 20);
+            this.tb_identifiant.Size = new System.Drawing.Size(276, 22);
             this.tb_identifiant.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 90);
+            this.label6.Location = new System.Drawing.Point(51, 111);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Identifiant";
             // 
@@ -310,17 +333,18 @@ namespace AP2_Prep_Order
             this.lbl_err.AutoSize = true;
             this.lbl_err.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_err.ForeColor = System.Drawing.Color.Red;
-            this.lbl_err.Location = new System.Drawing.Point(13, 58);
+            this.lbl_err.Location = new System.Drawing.Point(17, 71);
+            this.lbl_err.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_err.Name = "lbl_err";
-            this.lbl_err.Size = new System.Drawing.Size(265, 20);
+            this.lbl_err.Size = new System.Drawing.Size(322, 25);
             this.lbl_err.TabIndex = 0;
             this.lbl_err.Text = "identifiant ou mot de passe incorrect";
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 692);
+            this.ClientSize = new System.Drawing.Size(1924, 852);
             this.Controls.Add(this.panel_connect);
             this.Controls.Add(this.panel_error);
             this.Controls.Add(this.panel_btn_start);
@@ -329,7 +353,7 @@ namespace AP2_Prep_Order
             this.Controls.Add(this.pb_bdd_disconnect);
             this.Controls.Add(this.pb_bdd_connected);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Accueil";
             this.Text = "Page d\'accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);

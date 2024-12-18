@@ -100,6 +100,7 @@ namespace AP2_Prep_Order
 
                     if (id != 0)
                     {
+                        Bdd.id = id;
                         return true;
                     }
                     else
@@ -156,8 +157,8 @@ namespace AP2_Prep_Order
                 lbl_err.Visible = false;
                 if (LeRole == "Cariste")
                 {
-                    FormPalettesManquantes laPagePalettes = new FormPalettesManquantes();
-                    laPagePalettes.Show();
+                    ConnexionCariste laPageConnexionCariste = new ConnexionCariste();
+                    laPageConnexionCariste.Show();
                     this.Hide();
                 }
                 else if (LeRole == "Preparateur")
