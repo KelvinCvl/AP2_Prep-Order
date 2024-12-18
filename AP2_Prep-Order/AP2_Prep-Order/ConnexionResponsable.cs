@@ -33,7 +33,9 @@ namespace AP2_Prep_Order
 
         private void visualiserLesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OuvrirVisualisation();
+            VisualiserCommandesResponsable visuPageCommande = new VisualiserCommandesResponsable();
+            visuPageCommande.MdiParent = VisualiserCommandesResponsable.ActiveForm;
+            visuPageCommande.Show();
         }
 
         public static void OuvrirVisualisation()
