@@ -53,7 +53,9 @@ namespace AP2_Prep_Order
 
         private void suiviDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SuiviResponsable laPageSuivi = new SuiviResponsable();
+            laPageSuivi.MdiParent = ConnexionResponsable.ActiveForm;
+            laPageSuivi.Show();
         }
 
         private void ConnexionResponsable_FormClosed(object sender, FormClosedEventArgs e)

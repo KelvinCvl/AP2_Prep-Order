@@ -114,6 +114,12 @@
     <Compile Include="StatutPrep.Designer.cs">
       <DependentUpon>StatutPrep.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuiviResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuiviResponsable.Designer.cs">
+      <DependentUpon>SuiviResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="VisualiserCommandesResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="StatutPrep.resx">
       <DependentUpon>StatutPrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuiviResponsable.resx">
+      <DependentUpon>SuiviResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisualiserCommandesResponsable.resx">
       <DependentUpon>VisualiserCommandesResponsable.cs</DependentUpon>
