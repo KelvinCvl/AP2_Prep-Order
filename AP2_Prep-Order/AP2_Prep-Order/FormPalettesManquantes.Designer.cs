@@ -109,8 +109,8 @@
             // 
             // Quantité
             // 
-            this.Quantité.Text = "Quantité";
-            this.Quantité.Width = 80;
+            this.Quantité.Text = "QuantitéPlein";
+            this.Quantité.Width = 106;
             // 
             // FormPalettesManquantes
             // 
