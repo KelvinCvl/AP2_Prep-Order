@@ -49,7 +49,7 @@ namespace AP2_Prep_Order
                         }
                         else
                         {
-                            if (tb_change_zone.Text != "1" && tb_change_zone.Text != "2" && tb_change_zone.Text != "3")
+                            if (tb_zone.Text != "1" && tb_zone.Text != "2" && tb_zone.Text != "3")
                             {
                                 MessageBox.Show("Erreur, merci de choisir une zone coreecte (1 2 3)", "Erreur de syntaxe", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }

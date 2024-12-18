@@ -36,6 +36,7 @@ namespace AP2_Prep_Order
             VisualiserCommandesResponsable visuPageCommande = new VisualiserCommandesResponsable();
             visuPageCommande.MdiParent = VisualiserCommandesResponsable.ActiveForm;
             visuPageCommande.Show();
+            visuPageCommande.Size = new System.Drawing.Size(MaximumSize.Width, MaximumSize.Height);
         }
 
         public static void OuvrirVisualisation()
