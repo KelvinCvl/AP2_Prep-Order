@@ -28,7 +28,6 @@ namespace AP2_Prep_Order
 
         private void cb_zone_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            int id = Bdd.id;
             int zone;
             switch (cb_zone.SelectedItem.ToString())
             {
@@ -45,10 +44,10 @@ namespace AP2_Prep_Order
                     MessageBox.Show("Zone inconnue", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
             }
-            GetPalettesVide(zone,id);
+            GetPalettesVide(zone);
         }
 
-        private void GetPalettesVide(int zone, int id)
+        private void GetPalettesVide(int zone)
         {
             try
             {
@@ -56,7 +55,6 @@ namespace AP2_Prep_Order
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ZoneNum", zone);
-                    command.Parameters.AddWithValue("@id", id);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -65,9 +63,9 @@ namespace AP2_Prep_Order
                         while (reader.Read())
                         {
                             ListViewItem item = new ListViewItem(reader["emplacement"].ToString());
-                            item.SubItems.Add(reader["allee"].ToString());
                             item.SubItems.Add(reader["etage"].ToString());
-                            item.SubItems.Add(reader["libelleArticle"].ToString());
+                            item.SubItems.Add(reader["allee"].ToString());
+                            item.SubItems.Add(reader["idArticlePalette"].ToString());
                             item.SubItems.Add(reader["nombrePlein"].ToString());
                             lv_vide.Items.Add(item);
                         }
@@ -85,10 +83,6 @@ namespace AP2_Prep_Order
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
 
