@@ -16,5 +16,29 @@ namespace AP2_Prep_Order
         {
             InitializeComponent();
         }
+
+        public static string csvFilePath = @"";
+
+        private void importerUnFichierCSVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImporterResponsable importPage = new ImporterResponsable();
+            importPage.MdiParent = this;
+            importPage.Show();
+        }
+
+        private void visualiserLesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void assignerDesPréparateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suiviDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

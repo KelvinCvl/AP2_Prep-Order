@@ -37,13 +37,14 @@
             this.Etage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Article = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Quantité = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(282, 18);
+            this.label1.Location = new System.Drawing.Point(274, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 42);
             this.label1.TabIndex = 2;
@@ -53,7 +54,7 @@
             // cb_zone
             // 
             this.cb_zone.FormattingEnabled = true;
-            this.cb_zone.Location = new System.Drawing.Point(462, 27);
+            this.cb_zone.Location = new System.Drawing.Point(454, 6);
             this.cb_zone.Name = "cb_zone";
             this.cb_zone.Size = new System.Drawing.Size(121, 24);
             this.cb_zone.TabIndex = 3;
@@ -63,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(224, 60);
+            this.label2.Location = new System.Drawing.Point(216, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(438, 25);
             this.label2.TabIndex = 4;
@@ -78,9 +79,9 @@
             this.Article,
             this.Quantité});
             this.lv_vide.HideSelection = false;
-            this.lv_vide.Location = new System.Drawing.Point(145, 88);
+            this.lv_vide.Location = new System.Drawing.Point(12, 71);
             this.lv_vide.Name = "lv_vide";
-            this.lv_vide.Size = new System.Drawing.Size(651, 344);
+            this.lv_vide.Size = new System.Drawing.Size(697, 344);
             this.lv_vide.TabIndex = 5;
             this.lv_vide.UseCompatibleStateImageBehavior = false;
             this.lv_vide.View = System.Windows.Forms.View.Details;
@@ -92,13 +93,11 @@
             // 
             // Alleé
             // 
-            this.Alleé.DisplayIndex = 2;
             this.Alleé.Text = "Allée";
             this.Alleé.Width = 80;
             // 
             // Etage
             // 
-            this.Etage.DisplayIndex = 1;
             this.Etage.Text = "Etage";
             this.Etage.Width = 80;
             // 
@@ -109,14 +108,27 @@
             // 
             // Quantité
             // 
-            this.Quantité.Text = "Quantité";
-            this.Quantité.Width = 80;
+            this.Quantité.Text = "Quantité à Remplir";
+            this.Quantité.Width = 129;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 57);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Fermer";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormPalettesManquantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 553);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lv_vide);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cb_zone);
@@ -140,5 +152,6 @@
         private System.Windows.Forms.ColumnHeader Alleé;
         private System.Windows.Forms.ColumnHeader Article;
         private System.Windows.Forms.ColumnHeader Quantité;
+        private System.Windows.Forms.Button button1;
     }
 }
