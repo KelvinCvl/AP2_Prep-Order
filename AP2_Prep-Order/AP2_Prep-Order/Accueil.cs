@@ -89,7 +89,7 @@ namespace AP2_Prep_Order
                     command.Parameters.AddWithValue("@mdp", mdp);
                     command.Parameters.AddWithValue("@table", role);
 
-                    // DECLARE @id EN OUTPUT
+                    // DECLARE @id EN OUTPUT PARCEQUE SINON CA MARCHE PAS ET C NUL ET C PAS COOL ET C NUL
                     SqlParameter idParam = new SqlParameter("@id", SqlDbType.Int);
                     idParam.Direction = ParameterDirection.Output;
                     command.Parameters.Add(idParam);

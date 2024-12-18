@@ -307,8 +307,7 @@ namespace AP2_Prep_Order
             this.tb_mdp.Location = new System.Drawing.Point(55, 220);
             this.tb_mdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mdp.Name = "tb_mdp";
-            this.tb_mdp.PasswordChar = '*';
-            this.tb_mdp.Size = new System.Drawing.Size(276, 22);
+            this.tb_mdp.Size = new System.Drawing.Size(208, 20);
             this.tb_mdp.TabIndex = 3;
             // 
             // tb_identifiant
