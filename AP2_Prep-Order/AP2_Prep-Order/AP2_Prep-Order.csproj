@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationStockage.resx">
+      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnexionCariste.resx">
       <DependentUpon>ConnexionCariste.cs</DependentUpon>
     </EmbeddedResource>
