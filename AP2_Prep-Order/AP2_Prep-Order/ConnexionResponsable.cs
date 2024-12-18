@@ -34,7 +34,7 @@ namespace AP2_Prep_Order
         private void visualiserLesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VisualiserCommandesResponsable visuPageCommande = new VisualiserCommandesResponsable();
-            visuPageCommande.MdiParent = VisualiserCommandesResponsable.ActiveForm;
+            visuPageCommande.MdiParent = ConnexionResponsable.ActiveForm;
             visuPageCommande.Show();
             visuPageCommande.Size = new System.Drawing.Size(MaximumSize.Width, MaximumSize.Height);
         }
@@ -48,7 +48,9 @@ namespace AP2_Prep_Order
 
         private void assignerDesPréparateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Assigner laPageAssigner = new Assigner();
+            laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+            laPageAssigner.Show();
         }
 
         private void suiviDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
