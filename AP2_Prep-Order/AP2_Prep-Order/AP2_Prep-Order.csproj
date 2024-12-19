@@ -76,11 +76,11 @@
     <Compile Include="ComptesResponsable.Designer.cs">
       <DependentUpon>ComptesResponsable.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmationStockage.cs">
+    <Compile Include="GestionStockHauteur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfirmationStockage.Designer.cs">
-      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
+    <Compile Include="GestionStockHauteur.Designer.cs">
+      <DependentUpon>GestionStockHauteur.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnexionCariste.cs">
       <SubType>Form</SubType>
@@ -100,11 +100,11 @@
     <Compile Include="FormPalettesManquantes.Designer.cs">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionHauteur.cs">
+    <Compile Include="ConfirmationStockage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionHauteur.Designer.cs">
-      <DependentUpon>GestionHauteur.cs</DependentUpon>
+    <Compile Include="ConfirmationStockage.Designer.cs">
+      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
     </Compile>
     <Compile Include="ImporterResponsable.cs">
       <SubType>Form</SubType>
@@ -147,8 +147,8 @@
     <EmbeddedResource Include="ComptesResponsable.resx">
       <DependentUpon>ComptesResponsable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmationStockage.resx">
-      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
+    <EmbeddedResource Include="GestionStockHauteur.resx">
+      <DependentUpon>GestionStockHauteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConnexionCariste.resx">
       <DependentUpon>ConnexionCariste.cs</DependentUpon>
@@ -159,8 +159,8 @@
     <EmbeddedResource Include="FormPalettesManquantes.resx">
       <DependentUpon>FormPalettesManquantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionHauteur.resx">
-      <DependentUpon>GestionHauteur.cs</DependentUpon>
+    <EmbeddedResource Include="ConfirmationStockage.resx">
+      <DependentUpon>ConfirmationStockage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImporterResponsable.resx">
       <DependentUpon>ImporterResponsable.cs</DependentUpon>
