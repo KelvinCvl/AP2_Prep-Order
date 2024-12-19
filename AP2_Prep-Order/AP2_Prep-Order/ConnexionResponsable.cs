@@ -36,7 +36,6 @@ namespace AP2_Prep_Order
             VisualiserCommandesResponsable visuPageCommande = new VisualiserCommandesResponsable();
             visuPageCommande.MdiParent = ConnexionResponsable.ActiveForm;
             visuPageCommande.Show();
-            visuPageCommande.Size = new System.Drawing.Size(MaximumSize.Width, MaximumSize.Height);
         }
 
         public static void OuvrirVisualisation()
@@ -48,8 +47,19 @@ namespace AP2_Prep_Order
 
         private void assignerDesPréparateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Fermer toutes les autres pages ouvertes dans le MDI container
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
+
             Assigner laPageAssigner = new Assigner();
             laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            // Configurer la nouvelle page pour occuper tout l'espace
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
             laPageAssigner.Show();
         }
 
@@ -75,6 +85,11 @@ namespace AP2_Prep_Order
             ComptesResponsable laPageComptes = new ComptesResponsable();
             laPageComptes.MdiParent = this;
             laPageComptes.Show();
+        }
+
+        private void ConnexionResponsable_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
