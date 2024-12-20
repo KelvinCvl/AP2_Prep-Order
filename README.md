@@ -4,6 +4,7 @@
 -[Accès_Utilisateurs](#Accès_Utilisateurs)
 -[Prérequis](#Prérequis)
 -[Langage_et_Framework](#Langage_et_Framework)
+-[Documentation](#documentation)
 -[Auteurs](#Auteurs)
 
 ## Description_de_l'Application
@@ -60,6 +61,11 @@
 - Visual Studio (Community)
 - C-Sharp
 - SQL
+
+## Documentation
+- Maquettes
+- Base de données
+- Description des procédures et triggers
 
 ## Auteurs
 - Kelvin Chauvel (Chef de projet)
