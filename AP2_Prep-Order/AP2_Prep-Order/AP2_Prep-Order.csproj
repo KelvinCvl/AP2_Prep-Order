@@ -132,12 +132,6 @@
     <Compile Include="VisualiserCommandesResponsable.Designer.cs">
       <DependentUpon>VisualiserCommandesResponsable.cs</DependentUpon>
     </Compile>
-    <Compile Include="VisualiserResponsable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VisualiserResponsable.Designer.cs">
-      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,9 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VisualiserCommandesResponsable.resx">
       <DependentUpon>VisualiserCommandesResponsable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VisualiserResponsable.resx">
-      <DependentUpon>VisualiserResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
