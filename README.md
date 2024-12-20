@@ -53,7 +53,7 @@
 ## Prérequis
 - SQL Server Managment Studio 20
 - Visual Studio
-- Télécharger la base de donnée avec ses procédures et triggers
+- Télécharger la base de donnée avec ses procédures et triggers et l'appeler "ap2prep'order"
 - Changer la ligne de connexion sur le projet dans Bdd
 
 ## Langages_et_frameworks
