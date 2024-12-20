@@ -118,7 +118,7 @@ namespace AP2_Prep_Order
                             while (reader.Read())
                             {
                                 ListViewItem item = new ListViewItem(reader["idSousCommande"].ToString());
-                                item.SubItems.Add(reader["nom"].ToString());
+                                item.SubItems.Add(reader["idZone"].ToString());
                                 lv_sous_commande.Items.Add(item);
                             }
                         }

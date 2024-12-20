@@ -99,6 +99,7 @@
             this.Text = "ConnexionResponsable";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ConnexionResponsable_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ConnexionResponsable_FormClosed);
+            this.Load += new System.EventHandler(this.ConnexionResponsable_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

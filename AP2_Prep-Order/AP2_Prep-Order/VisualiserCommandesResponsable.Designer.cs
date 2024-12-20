@@ -102,7 +102,7 @@
             this.lv_commander.HideSelection = false;
             this.lv_commander.Location = new System.Drawing.Point(585, 33);
             this.lv_commander.Name = "lv_commander";
-            this.lv_commander.Size = new System.Drawing.Size(213, 326);
+            this.lv_commander.Size = new System.Drawing.Size(361, 326);
             this.lv_commander.TabIndex = 2;
             this.lv_commander.UseCompatibleStateImageBehavior = false;
             this.lv_commander.View = System.Windows.Forms.View.Details;
@@ -110,7 +110,7 @@
             // Article
             // 
             this.Article.Text = "Article";
-            this.Article.Width = 100;
+            this.Article.Width = 250;
             // 
             // quantite
             // 

@@ -26,38 +26,66 @@ namespace AP2_Prep_Order
 
         public static void OuvrirImportation()
         {
-            ImporterResponsable importPage = new ImporterResponsable();
-            importPage.MdiParent = ConnexionResponsable.ActiveForm;
-            importPage.Show();
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
+
+            ImporterResponsable laPageAssigner = new ImporterResponsable();
+            laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
+            laPageAssigner.Show();
         }
 
         private void visualiserLesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VisualiserCommandesResponsable visuPageCommande = new VisualiserCommandesResponsable();
-            visuPageCommande.MdiParent = ConnexionResponsable.ActiveForm;
-            visuPageCommande.Show();
-            visuPageCommande.Size = new System.Drawing.Size(MaximumSize.Width, MaximumSize.Height);
-        }
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
 
-        public static void OuvrirVisualisation()
-        {
-            VisualiserResponsable visualiser = new VisualiserResponsable();
-            visualiser.MdiParent = ConnexionResponsable.ActiveForm;
-            visualiser.Show();
+            VisualiserCommandesResponsable laPageAssigner = new VisualiserCommandesResponsable();
+            laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
+            laPageAssigner.Show();
         }
 
         private void assignerDesPréparateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
+
             Assigner laPageAssigner = new Assigner();
             laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
             laPageAssigner.Show();
         }
 
         private void suiviDesCommandesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SuiviResponsable laPageSuivi = new SuiviResponsable();
-            laPageSuivi.MdiParent = ConnexionResponsable.ActiveForm;
-            laPageSuivi.Show();
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
+
+            SuiviResponsable laPageAssigner = new SuiviResponsable();
+            laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
+            laPageAssigner.Show();
         }
 
         private void ConnexionResponsable_FormClosed(object sender, FormClosedEventArgs e)
@@ -72,9 +100,23 @@ namespace AP2_Prep_Order
 
         private void utilisateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ComptesResponsable laPageComptes = new ComptesResponsable();
-            laPageComptes.MdiParent = this;
-            laPageComptes.Show();
+            foreach (Form childForm in ConnexionResponsable.ActiveForm.MdiChildren)
+            {
+                childForm.Close();
+            }
+
+            ComptesResponsable laPageAssigner = new ComptesResponsable();
+            laPageAssigner.MdiParent = ConnexionResponsable.ActiveForm;
+
+            laPageAssigner.FormBorderStyle = FormBorderStyle.None;
+            laPageAssigner.Dock = DockStyle.Fill;
+
+            laPageAssigner.Show();
+        }
+
+        private void ConnexionResponsable_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -125,6 +125,8 @@ namespace AP2_Prep_Order
 
             panel_connect.Visible = true;
             panel_connect.Enabled = true;
+
+            btn_connect.Select();
         }
 
         private void btn_connect_prep_Click(object sender, EventArgs e)
@@ -136,6 +138,8 @@ namespace AP2_Prep_Order
 
             panel_connect.Visible = true;
             panel_connect.Enabled = true;
+
+            btn_connect.Select();
         }
 
         private void btn_connect_resp_Click(object sender, EventArgs e)
@@ -147,6 +151,8 @@ namespace AP2_Prep_Order
 
             panel_connect.Visible = true;
             panel_connect.Enabled = true;
+
+            btn_connect.Select();
         }
 
         private void btn_connect_Click(object sender, EventArgs e)
